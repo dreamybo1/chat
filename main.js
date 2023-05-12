@@ -6,7 +6,8 @@
 /* eslint-disable semi */
 /* eslint-disable quotes */
 /* eslint-disable no-multiple-empty-lines */
-import { responseGet, getCookie } from "./Modules/getInfoRequest.js";
+import { getCookie } from "./Modules/getCookies.js";
+import { responseGet } from "./Modules/getInfoRequest.js";
 import { responseGetMessages } from "./Modules/getMessagesRequest.js";
 import { response } from "./Modules/setNameRequest.js";
 import { getItem, setItem } from "./Modules/localStorage.js";
