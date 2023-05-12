@@ -1,0 +1,144 @@
+<html lang="en">
+    <link rel="stylesheet" href="/css/style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHAT</title>
+</head>
+<body>
+    <template id="template">
+        <div class="preMessage">
+            <div class="myMessageDiv">
+                <code class="message">
+                    Я:Добрый день! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim atque ipsum consectetur quae perferendis fugiat similique unde ratione tempora dolorem. Minima eius unde cupiditate, enim illum obcaecati aperiam incidunt nulla. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, recusandae quasi quo voluptas optio nobis quas consequatur voluptates blanditiis qui, in dicta pariatur perferendis, id sit accusamus consequuntur porro nostrum?
+                </code>
+                <code class="time">
+                    18:45
+                </code>
+            </div>
+        </div>
+        
+    </template>
+    <div class="container">
+
+        
+
+
+        <button class="parametres">
+            Настройки
+        </button>
+
+
+        <button class="exit" id="exitSession">
+            Выход
+        </button>
+
+
+        <div class="chatWindow">
+
+
+        </div>
+
+
+        <form action="" class="inputForm" id="inputForm">
+            <input class="input" type="text" placeholder="Сообщение" value="" name="" id="">
+            <button class="send">
+                ->
+            </button>
+        </form>
+
+
+        <div class="modalAuth none" id="popupAuth" >
+            <div class="modalAuth_box">
+                <code class="param">
+                    Авторизация
+                    
+                </code>
+                
+                <code class="chatName">
+                    Почта:
+                </code>
+                <form action="" class="inputFormAuth">
+                    <input class="inputAuth" value="" type="text">
+                    
+                </form>
+                <div id="authButtons">
+                    <button class="exitButtonAuth" id="getCode">
+                        <code>
+                            Получить код
+                        </code>
+                    </button>
+                    <button class="exitButtonAuth" id="useCode">
+                        <code>
+                            Ввести код
+                        </code>
+                    </button>
+                </div>
+                
+
+                
+            </div>
+        </div>
+
+
+
+        <div class="modalConfirm none" id="popupConfirm" >
+            <div class="modalConfirm_box">
+                <code class="param">
+                    Подтверждение
+                    <button class="backButton">
+
+                    </button>
+                </code>
+                
+                <code class="chatName">
+                    Код:
+                </code>
+                <form action="" class="inputFormConfirm">
+                    <input class="inputConfirm" value="" type="text">
+                    <button class="confirmButton">
+                        <code>
+                            Войти
+                        </code>
+                    </button>
+                </form>
+
+                
+            </div>
+        </div>
+
+
+
+        <div class="modalName none" id="popupParams" >
+            <div class="modal_box">
+                <code class="param">
+                    Настройки
+                    <button class="closeButton" id="closeNameParams">
+
+                    </button>
+                </code>
+                
+                <code class="chatName">
+                    Имя в чате
+                </code>
+                <form action="" class="inputFormParams">
+                    <input class="inputName" value="" type="text">
+                    <button class="exitButton">
+                        <code>
+                            ->
+                        </code>
+                    </button>
+                </form>
+
+                
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+<script src="main.js" type="module"></script>
+</html>

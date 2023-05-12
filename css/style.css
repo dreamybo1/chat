@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    transition: 0.4s;
+    animation-duration: 1s;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #7c9da2;
+}
+.modalName.none{
+    display: none;
+}
+.container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    height: 533px;
+    width: 320px;
+    background-color: rgb(225, 252, 255);
+    border-radius: 2px;
+}
+.parametres{
+    border: 1px solid black;
+    height: 32px;
+    width: 98px;
+    position: relative;
+    left: 7px;
+}
+.parametres:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: #F6F6F6;
+}
+.exit{
+    position: relative;
+    border: 1px solid black;
+    height: 32px;
+    width: 66px;
+    margin-left: auto;
+    right: 7px;
+}
+.exit:hover{
+    background-color: black;
+    border-radius: 10px;
+    color: #F6F6F6;
+}
+
+.send:hover{
+    background-color: rgb(255, 121, 121);
+    border-radius: 10px;
+    color: #F6F6F6;
+}
+.exitButton:hover{
+    background-color: rgb(255, 121, 121);
+    border-radius: 10px;
+    color: #F6F6F6;
+}
+.preMessage{
+    width: 100%;
+}
+.chatWindow{
+    position: relative;
+    border: 1px solid black;
+    height: 437px;
+    width: 304px;
+    gap: 10px;
+    overflow-y: auto;
+    transition: 3s;
+    animation-duration: 3s;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://webmg.ru/wp-content/uploads/2022/04/1614263687_14-p-cherno-belie-foni-dlya-detei-14.png);
+    background-size:cover;
+}
+.myMessageDiv{
+    position: relative;
+    display: inline-block;
+    float: right;
+    padding: 4px;
+    margin: 8px;
+    justify-self: end;
+    background: #dfdfdf;
+    max-width: 250px;
+    display: grid;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: 5s;
+}
+.someMessageDiv{
+    position: relative;
+    display: inline-block;
+    float: left;
+    padding: 4px;
+    margin: 8px;
+    justify-self: end;
+    background: #adabab;
+    max-width: 250px;
+    display: grid;
+    min-height: 32px;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition:5s;
+}
+::-webkit-scrollbar { display: none; }
+.message{
+    max-width: 288px;
+    position: relative;
+    padding-top: 7px;
+    padding-left: 7px;
+    word-wrap: break-word;
+    word-break: break-all;
+    /* left: 7px;
+    top: 7px; */
+}
+.time{
+    position: relative;
+
+    justify-self: end;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    /* bottom: 7px;
+    right: 7px; */
+    
+}
+.inputForm{
+    width: 304px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    outline: none;
+    border: 1px solid black;
+    height: 32px;
+    width: 267px;
+}
+.send{
+    border: 1px solid black;
+    height: 32px;
+    width: 29px;
+}
+.modalName{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.modalAuth{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.modalConfirm{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99998;
+    background-color: rgba(0, 0, 0, .3);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+.modal_box{
+    position: relative;
+    width: 273px;
+    height: 319px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-content: space-evenly;
+    border: 2px solid rgb(225, 110, 110);
+    
+    
+}
+.modalAuth_box{
+    position: relative;
+    width: 273px;
+    height: 319px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-content: space-evenly;
+    border: 2px solid rgb(225, 110, 110);
+    
+    
+}
+.modalConfirm_box{
+    position: relative;
+    width: 273px;
+    height: 319px;
+    background-color: white;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: start;
+    align-content: space-evenly;
+    border: 2px solid rgb(225, 110, 110);
+    
+    
+}
+.modalAuth.none{
+    display: none;
+}
+.modalConfirm.none{
+    display: none;
+}
+.param{
+    padding-top: 15px;
+    grid-area: param ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.closeButton{
+    grid-area: closeButton ;
+    background-image: url(https://www.svgrepo.com/download/510921/close-lg.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+.backButton{
+    grid-area: closeButton ;
+    background-image: url(https://www.svgrepo.com/download/500472/back.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+}
+.chatName{
+    padding-top: 15px;
+    grid-area: chatName ;
+}
+.inputName{
+    width: 207px;
+    height: 32px;
+    border: 1px solid black;
+    outline: none;
+    
+}
+.inputConfirm{
+    width: 207px;
+    height: 32px;
+    border: 1px solid black;
+    outline: none;
+    
+}
+.inputAuth{
+    width: 207px;
+    height: 32px;
+    border: 1px solid black;
+    outline: none;
+    
+}
+.inputForm{
+    padding-top: 7px;
+    grid-area: inputForm ;
+}
+.inputFormParams{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputFormAuth{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.inputFormConfirm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.exitButton{
+    border: 1px solid black;
+    height: 32px;
+    width: 29px;
+    grid-area: exitButton ;
+}
+.confirmButton{
+    border: 1px solid black;
+    height: 33px;
+    width: 62px;
+    grid-area: exitButton ;
+    
+}
+#authButtons{
+    padding-top: 7px;
+    display: flex;
+    justify-content: space-evenly  ;
+}
+.exitButtonAuth{
+    border: 1px solid black;
+    height: 34px;
+    width: 120px;
+}
+.dataClass{
+    transition: 0.4s;
+    position:absolute;
+    background-color:grey;
+    opacity:0%;top:50px;
+    align-self:center;
+    height:20px;
+    width:90px;
+    border: 1px solid black;
+    border-radius:10px;
+    text-align: center;
+    color: white;
+    font-size: 10px;
+    cursor: default;
+}
+.dataClass.none{
+display: none;
+}
+.dataClass.opacity{
+    
+    opacity: 80%;
+}
