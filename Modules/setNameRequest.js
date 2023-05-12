@@ -1,5 +1,4 @@
-import { getCookie } from "./getCookies"
-
+import { getCookie } from ".Modules/getCookies.js"
 
 
   const response =  fetch('https://edu.strada.one/api/user/', {
