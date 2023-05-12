@@ -6,10 +6,10 @@
 /* eslint-disable semi */
 /* eslint-disable quotes */
 /* eslint-disable no-multiple-empty-lines */
-import { responseGet, getCookie } from "./Modules/getInfoRequest";
-import { responseGetMessages } from "./Modules/getMessagesRequest";
-import { response } from "./Modules/setNameRequest";
-import { getItem, setItem } from "./Modules/localStorage";
+import { responseGet, getCookie } from "./Modules/getInfoRequest.js";
+import { responseGetMessages } from "./Modules/getMessagesRequest.js";
+import { response } from "./Modules/setNameRequest.js";
+import { getItem, setItem } from "./Modules/localStorage.js";
 console.log(responseGet)
 console.log(getCookie("token"))
 
